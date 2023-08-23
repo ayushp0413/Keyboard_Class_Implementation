@@ -27,7 +27,7 @@ class Main
         gender=k.getCharacter("Enter gender(M/F) :");
         salary=k.getFloat("Enter Salary :");
         phone=k.getDouble("Enter Phone :");
-        // hasExperience=k.getBool("Do you have a experience :");
+        hasExperience=k.getBoolean("Do you have a experience :");
         System.out.println("Name :"+name);
         System.out.println("ID :"+id);
         System.out.println("Age :"+age);
