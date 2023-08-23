@@ -1,0 +1,38 @@
+import com.thinking.machines.util.*;
+class Main 
+{
+    public static void main (String[] args)
+    {
+        Keyboard k = new Keyboard();
+        String name;
+        long id;
+        int age=0;
+        char gender;
+        float salary;
+        double phone;
+        boolean hasExperience;
+        // System.out.println("Enter name :");
+        // name=k.getString();
+        name=k.getString("Enter your name :");
+        id=k.getLong("Enter your ID :");
+        try 
+        {
+            age=k.getInt("Enter Age :");
+            if(age<=0) throw new Keyboard();
+            
+        }catch(Keyboard kb)
+        {
+            System.out.println("Cannot be negative");
+        }
+        gender=k.getCharacter("Enter gender(M/F) :");
+        salary=k.getFloat("Enter Salary :");
+        phone=k.getDouble("Enter Phone :");
+        // hasExperience=k.getBool("Do you have a experience :");
+        System.out.println("Name :"+name);
+        System.out.println("ID :"+id);
+        System.out.println("Age :"+age);
+        System.out.println("Gender :"+gender);
+        System.out.println("Salary :"+salary);
+        System.out.println("Phone :"+phone);
+    }
+}
